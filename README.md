@@ -1,2 +1,2 @@
 # BuddyFinder
-Find Your Buddies Last Known Location
+Find Your Buddies Current Known Location or Last Known Location 
