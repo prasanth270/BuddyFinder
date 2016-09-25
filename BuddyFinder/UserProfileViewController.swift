@@ -18,7 +18,6 @@ class UserProfileViewController: UIViewController, GIDSignInUIDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,11 +29,10 @@ class UserProfileViewController: UIViewController, GIDSignInUIDelegate {
             } else { // User Not Logged In
                 print("No User Logged In")
             }
-            
         }
     }
     
-    //Sign Out User on Button Click
+    // Sign Out User on Button Click
     @IBAction func signOutUser(_ sender: UIButton) {
         
         //SignOut From Google
@@ -42,8 +40,5 @@ class UserProfileViewController: UIViewController, GIDSignInUIDelegate {
         
         //Sign Out From Firebase
         try! FIRAuth.auth()!.signOut()
-        
     }
-    
-
 }

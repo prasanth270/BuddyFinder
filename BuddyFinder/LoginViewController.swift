@@ -29,7 +29,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         if let error = error{
             print(error.localizedDescription)
         } else {
-            if let view = self.storyboard!.instantiateViewController(withIdentifier: "upvc") as? UserProfileViewController {
+            if let view = self.storyboard!.instantiateViewController(withIdentifier: "mainStoryBoardView") as? MainViewController {
                 self.present(view, animated: true, completion: nil)
             }
         }
