@@ -122,14 +122,14 @@
 			isa = PBXGroup;
 			children = (
 				513661CC1D97AAF200C30258 /* BuddyFinder.entitlements */,
-				51A3D3F61D977B1B002D0D71 /* AppDelegate.swift */,
-				51A3D3F81D977B1B002D0D71 /* MainViewController.swift */,
-				51A3D3FA1D977B1B002D0D71 /* Main.storyboard */,
 				51A3D3FD1D977B1B002D0D71 /* Assets.xcassets */,
 				51A3D3FF1D977B1B002D0D71 /* LaunchScreen.storyboard */,
 				51A3D4021D977B1B002D0D71 /* Info.plist */,
 				51B2C3AA1D9975CF00E0BFE7 /* GoogleService-Info.plist */,
+				51A3D3FA1D977B1B002D0D71 /* Main.storyboard */,
+				51A3D3F61D977B1B002D0D71 /* AppDelegate.swift */,
 				51A3D4261D977E3C002D0D71 /* LoginViewController.swift */,
+				51A3D3F81D977B1B002D0D71 /* MainViewController.swift */,
 				51F11AB11D9798C600614E36 /* UserProfileViewController.swift */,
 			);
 			path = BuddyFinder;
