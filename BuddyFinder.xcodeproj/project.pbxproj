@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5162234E1D97A75600683A8D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5162234D1D97A75600683A8D /* GoogleService-Info.plist */; };
 		51A3D3F71D977B1B002D0D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A3D3F61D977B1B002D0D71 /* AppDelegate.swift */; };
 		51A3D3F91D977B1B002D0D71 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A3D3F81D977B1B002D0D71 /* MainViewController.swift */; };
 		51A3D3FC1D977B1B002D0D71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A3D3FA1D977B1B002D0D71 /* Main.storyboard */; };
@@ -16,6 +15,7 @@
 		51A3D40C1D977B1B002D0D71 /* BuddyFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A3D40B1D977B1B002D0D71 /* BuddyFinderTests.swift */; };
 		51A3D4171D977B1B002D0D71 /* BuddyFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A3D4161D977B1B002D0D71 /* BuddyFinderUITests.swift */; };
 		51A3D4271D977E3C002D0D71 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A3D4261D977E3C002D0D71 /* LoginViewController.swift */; };
+		51B2C3AB1D9975CF00E0BFE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51B2C3AA1D9975CF00E0BFE7 /* GoogleService-Info.plist */; };
 		51F11AB21D9798C600614E36 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F11AB11D9798C600614E36 /* UserProfileViewController.swift */; };
 		8DB59E31AB99136FF22390AC /* Pods_BuddyFinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CB165B8D9E2BA434993E59 /* Pods_BuddyFinderUITests.framework */; };
 		C47E965943E2ECF4C73FE2DC /* Pods_BuddyFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219C212A6840DCF66BB55349 /* Pods_BuddyFinderTests.framework */; };
@@ -45,7 +45,6 @@
 		34E9A5F2093B1F2504557769 /* Pods-BuddyFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuddyFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuddyFinder/Pods-BuddyFinder.release.xcconfig"; sourceTree = "<group>"; };
 		3D842D2C2F41C39EC976D04C /* Pods-BuddyFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuddyFinderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuddyFinderUITests/Pods-BuddyFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		513661CC1D97AAF200C30258 /* BuddyFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BuddyFinder.entitlements; sourceTree = "<group>"; };
-		5162234D1D97A75600683A8D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		51A3D3F31D977B1B002D0D71 /* BuddyFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A3D3F61D977B1B002D0D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51A3D3F81D977B1B002D0D71 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		51A3D4161D977B1B002D0D71 /* BuddyFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyFinderUITests.swift; sourceTree = "<group>"; };
 		51A3D4181D977B1B002D0D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51A3D4261D977E3C002D0D71 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		51B2C3AA1D9975CF00E0BFE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		51F11AB11D9798C600614E36 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		5F374FE235B2415DE6B74399 /* Pods-BuddyFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuddyFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuddyFinderTests/Pods-BuddyFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A460AFCD9C5A9D5F9E878633 /* Pods-BuddyFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuddyFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuddyFinderTests/Pods-BuddyFinderTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 				51A3D3FA1D977B1B002D0D71 /* Main.storyboard */,
 				51A3D3FD1D977B1B002D0D71 /* Assets.xcassets */,
 				51A3D3FF1D977B1B002D0D71 /* LaunchScreen.storyboard */,
-				5162234D1D97A75600683A8D /* GoogleService-Info.plist */,
 				51A3D4021D977B1B002D0D71 /* Info.plist */,
+				51B2C3AA1D9975CF00E0BFE7 /* GoogleService-Info.plist */,
 				51A3D4261D977E3C002D0D71 /* LoginViewController.swift */,
 				51F11AB11D9798C600614E36 /* UserProfileViewController.swift */,
 			);
@@ -298,7 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A3D4011D977B1B002D0D71 /* LaunchScreen.storyboard in Resources */,
-				5162234E1D97A75600683A8D /* GoogleService-Info.plist in Resources */,
+				51B2C3AB1D9975CF00E0BFE7 /* GoogleService-Info.plist in Resources */,
 				51A3D3FE1D977B1B002D0D71 /* Assets.xcassets in Resources */,
 				51A3D3FC1D977B1B002D0D71 /* Main.storyboard in Resources */,
 			);

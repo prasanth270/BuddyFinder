@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
-class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
+class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBOutlet weak var signInButton: GIDSignInButton!
     
@@ -18,25 +18,21 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         super.viewDidLoad()
         
         GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().delegate = self
         
         //Sign in Silently
         //GIDSignIn.sharedInstance().signInSilently()
-    }
-    
-    // User Sign in State - Signed In/ Not Signed In
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error{
-            print(error.localizedDescription)
-        } else {
-            if let view = self.storyboard!.instantiateViewController(withIdentifier: "mainStoryBoardView") as? MainViewController {
-                self.present(view, animated: true, completion: nil)
+        
+        // Check if user is signed in
+        FIRAuth.auth()?.addStateDidChangeListener{ auth, user in
+            if let user = user { // User Logged In
+                print("USer Id" + user.uid)
+                if let view = self.storyboard!.instantiateViewController(withIdentifier: "mainStoryBoardView") as? MainViewController {
+                    self.present(view, animated: true, completion: nil)
+                }
+            } else { // User Not Logged In
+                // Log Info and Stay in the Same page
+                print("User Not Signed")
             }
         }
-    }
-    
-    // SignOut of Google Instance
-    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-        GIDSignIn.sharedInstance().signOut()
     }
 }

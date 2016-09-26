@@ -22,14 +22,22 @@ class UserProfileViewController: UIViewController, GIDSignInUIDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         GIDSignIn.sharedInstance().uiDelegate = self
-        
-        FIRAuth.auth()?.addStateDidChangeListener{auth, user in
-            if let user = user { // User Logged In
-                self.userNameTextView.text = user.displayName
-            } else { // User Not Logged In
-                print("No User Logged In")
-            }
+    
+        if let user = FIRAuth.auth()?.currentUser {
+            print(user.displayName)
+            self.userNameTextView.text = user.displayName
+        } else {
+            print("User Not Signed In!!!!")
         }
+        
+        
+//        FIRAuth.auth()?.addStateDidChangeListener{auth, user in
+//            if let user = user { // User Logged In
+//                self.userNameTextView.text = user.displayName
+//            } else { // User Not Logged In
+//                print("No User Logged In")
+//            }
+//        }
     }
     
     // Sign Out User on Button Click

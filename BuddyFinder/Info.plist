@@ -4,10 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>Always Use Location</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Use Locatino When App in Use</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -35,6 +31,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Always Use Location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Use Locatino When App in Use</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

@@ -14,10 +14,17 @@ import GoogleSignIn
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
+    
+    override init() {
+        print("First")
+        //FIRApp.configure()
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        print("Second")
         
         //Configure Firebase
         FIRApp.configure()
@@ -33,9 +40,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     //UIApplicationOpenURLOptionsSourceApplicationKey changed to [UIApplicationOpenURLOptionsKey.sourceApplication] in Swift 3
     //UIApplicationOpenURLOptionsAnnotationKey changed to [UIApplicationOpenURLOptionsKey.annotation] in Swift 3
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        print("Hey \(GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation]))")
         return GIDSignIn.sharedInstance()
             .handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
     }
+    
+//    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+//        return  GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication!, annotation: annotation)
+//    }
+    
+//    func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: AnyObject]) -> Bool {
+//        print("Hey")
+//        return GIDSignIn.sharedInstance().handle(url as URL!, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+//    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -61,8 +78,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     //Sign In Delegate to Handle the Sign In
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        print("Signing IN....")
         if let error = error {
-            print(error.localizedDescription)
+            print("Err:: \(error.localizedDescription)")
             return
         }
         
@@ -72,7 +90,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         FIRAuth.auth()?.signIn(with: credential){
             (user, error) in
             if let error = error {
-                print(error.localizedDescription)
+                print("Error :: \(error.localizedDescription)")
             } else {
                 print("User Name:: \(user?.displayName)")
             }
