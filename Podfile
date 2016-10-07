@@ -8,6 +8,7 @@ target 'BuddyFinder' do
   # Pods for BuddyFinder
 	pod 'Firebase'
 	pod 'Firebase/Auth'
+	pod 'Firebase/Database'
 	pod 'GoogleSignIn'
 
   target 'BuddyFinderTests' do

@@ -13,7 +13,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var profileButton: UIButton!
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var selectSegmentView: UISegmentedControl!
     @IBOutlet weak var groupsTableView: UITableView!
     
     var locationManager : CLLocationManager!
